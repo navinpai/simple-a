@@ -3,4 +3,10 @@ simple-a
 
 Minimalistic Hugo theme
 
-I'm using it as my personal blog theme and you can take a look at [ru.alexfinn.de](http://ru.alexfinn.de)
+Originally based on the theme: [simple-a](https://github.com/AlexFinn/simple-a)
+
+Added/Modified features:
+
+1. Pagination
+2. Social buttons (config driven)
+3. Modifications to color palette
