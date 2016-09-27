@@ -43,16 +43,27 @@ figure.large img {
     height: auto;
 }
 
+figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 figcaption
 {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    background-color: #EFEFEF;    
+    font-family: "Liberation Serif", "Palatino Linotype", Georgia, serif; //Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 90%;        
     margin-left: 1%;
     padding-left: 4%;
     padding-right: 4%;
     text-align: justify;
     display: block;
+}
+
+figcaption h4 {
+    font-family: "Liberation Serif", "Palatino Linotype", Georgia, serif; "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-align: center;
+    font-size: 0.7em;
 }
 
 nav, footer {
