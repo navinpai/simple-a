@@ -55,7 +55,7 @@ figcaption
     display: block;
 }
 
-footer { 
+nav, footer {
  position: relative;
  z-index: 10; 
  line-height: normal;
@@ -118,9 +118,8 @@ footer {
 }
 
 .posts span {
-  float: right;
   text-transform: uppercase;
-  font-size: 0.70em;
+  font-size: 0.80em;
   color: #777777;
 }
 
@@ -160,7 +159,7 @@ p {
 }
 
 .post-header {
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px 5px 40px;
   text-align: center;
 }
 
@@ -168,7 +167,7 @@ p {
   font-size: 1.8em;
   color: #444;
   font-family: Philosopher;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .post-header a {
@@ -223,9 +222,7 @@ p {
 }
 
 .tags a:hover {
-  color: #fff;
-  background-color: #fa5305;
-  border-bottom: 3px solid #fa5305;
+  border-bottom: 3px solid #444444;
   text-decoration: none;
 }
 
@@ -301,4 +298,56 @@ pre code {
 code, pre {
     font-family: 'Liberation Mono', Monaco, Consolas;
     font-size: 14px;
+}
+
+
+/*** FONTS ***/
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot');
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a.symbol {
+    cursor: hand;
+    color: #cdd4da;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-right: 0.3rem;
+}
+
+a.symbol:hover {
+    color: #BCD4DA;
+    border-bottom: 0px;
+}
+
+.logo:hover {
+  background-color: #BCD4DA;
 }

@@ -3,7 +3,7 @@
   <head>
     {{ template "theme/chrome/meta.html" . }}  
     {{ template "theme/chrome/includes.html" . }}
-    <link rel="shortcut icon" href="/images/alexfinn.ico"> 
+    <link rel="shortcut icon" href="/images/gradient-ascent.ico">
     <link rel="apple-touch-icon" href="">
     <link rel="canonical" href="{{ .Permalink }}">
     <!-- atom & rss feed -->
@@ -26,8 +26,8 @@
             <article class="post">
             
               <header class="post-header">
+                <span class="post-time">{{ .Date.Format "January 2 2006" }}, {{ .FuzzyWordCount }} Words</span>
                 <h1><a href="{{.RelPermalink }}">{{ .Title }}</a></h1>
-                <div class="post-time">{{ .Date.Format "January 2 2006" }}, {{ .FuzzyWordCount }} Words</div>
               </header>
 
               <div class="post-after">
@@ -43,5 +43,6 @@
            
     </div>  
   </div>
-
+{{ partial "pagination" . }}
+{{ partial "social" . }}
 {{ template "theme/chrome/footer.html" }}
